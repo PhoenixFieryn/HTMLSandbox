@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Sandbox</title>
+    <link rel="stylesheet" href="main.css">
+    </link>
+    <script src="https://kit.fontawesome.com/191f496622.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1 class="navbar-heading">
+            HTML Sandbox
+        </h1>
+    </nav>
+    <div class="navbar-margin"></div>
+    <!-- *Challenge container template
+    <div class="challenge-container">
+        <h1 class="challenge-heading"></h1>
+        <div class="challenge-body">
+        </div>
+    </div>
+    -->
+    <div class="challenge-container">
+        <h1 class="challenge-heading">Heading</h1>
+        <div class="challenge-body">
+            <h1>H1</h1>
+            <h2>H2</h2>
+            <h3>H3</h3>
+            <h4>H4</h4>
+            <h5>H5</h5>
+            <h6>H6</h6>
+        </div>
+    </div>
+    <div class="challenge-container">
+        <h1 class="challenge-heading">Paragraphs</h1>
+        <div class="challenge-body">
+            <p>Paragraph with break <br> here.</p>
+        </div>
+    </div>
+    <div class="challenge-container">
+        <h1 class="challenge-heading">Text formatting</h1>
+        <div class="challenge-body">
+            <p>Here is a <sup>superscript</sup> and here is the <sub>subscript</sub>. This is <b>bold</b> in
+                <strong>two</strong> ways, <i>italic</i>, <u>underline</u>, <s>strike-through</s>, and
+                <del>deleted</del>.
+            </p>
+            <p>y = x<sup>2</sup></p>
+        </div>
+    </div>
+    <div class="challenge-container">
+        <h1 class="challenge-heading">Lists</h1>
+        <div class="challenge-body">
+            <ul>
+                <li>list items</li>
+                <li>can be</li>
+                <li>created quickly</li>
+                <li>using emmet</li>
+                <li>like this:</li>
+                <li>"li*6"</li>
+            </ul>
+            <ol>
+                <li>this is</li>
+                <li>an ordered</li>
+                <li>list, which</li>
+                <li>looks different</li>
+                <li>than unordered</li>
+                <li>lists.</li>
+            </ol>
+        </div>
+    </div>
+    <div class="challenge-container">
+        <h1 class="challenge-heading">Tables</h1>
+        <div class="challenge-body">
+            <table>
+                <caption>Table captions give tables titles</caption>
+                <thead>
+                    <tr>
+                        <th>Headings are</th>
+                        <th>useful to</th>
+                        <th>categorize content</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Table data</td>
+                        <td>tags hold</td>
+                        <td>useful information</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <td>Table footer goes here</td>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <div class="challenge-container">
+        <h1 class="challenge-heading">Links</h1>
+        <div class="challenge-body">
+            <a href="https://www.google.com/" rel="noreferrer" title="Google">Google without opening a new tab.</a>
+            <br>
+            <a href="https://www.google.com/" title="Google" target="_blank" rel="noreferrer"> Google with a new
+                tab.</a>
+            <br>
+            <p>Remember to use rel="noopener" and rel="noreferrer" to prevent cross-origin tracking! Also use title
+                attribute to give visitors tool-tips and aid accessibility software.</p>
+        </div>
+    </div>
+    <div class="challenge-container">
+        <h1 class="challenge-heading">Images</h1>
+        <div class="challenge-body">
+            <img src="https://resi.ze-robot.com/dl/ul/ultraviolet-4k-wallpaper-2560%C3%971440.jpg" alt="Wallpaper Image"
+                style="width: 50vw; height: auto;">
+            <br>
+            <img src=""
+                alt="Wallpaper Image alt attribute should be used in case the image isn't found or to help accessibility tools.">
+            <br>
+            <p>And the following image links to the source (which is a download): </p>
+            <a href="https://resi.ze-robot.com/dl/ul/ultraviolet-4k-wallpaper-2560%C3%971440.jpg" target="_blank"
+                rel="noreferrer" title="Wallpaper image download">
+                <img src="https://resi.ze-robot.com/dl/ul/ultraviolet-4k-wallpaper-2560%C3%971440.jpg"
+                    alt="Wallpaper Image" style="width: 200px; height: auto;">
+            </a>
+        </div>
+    </div>
+    <div class="challenge-container">
+        <h1 class="challenge-heading">Symbols and Entities</h1>
+        <div class="challenge-body">
+            <p>HTML can display various symbols and entities such as: &copy; &trade; &reg; &diams;. They follow unicode
+                encoding and can be represented by their names or encoding numbers. It's safer to escape special
+                reserved characters in HTML such as "&lt;" than to type it out directly. Be careful when decoding
+                encoded characters as such
+                operations can expose your website to XSS attacks!</p>
+        </div>
+    </div>
+    <div class="challenge-container">
+        <h1 class="challenge-heading">Forms</h1>
+        <div class="challenge-body">
+            <form>
+                <input type="text" placeholder="Input tag of type text">
+                <br>
+                <input type="radio" value="Radio" name="radio"> Radio button
+                <br>
+                <input type="radio" value="Checked" name="checked" checked> Checked radio
+                <br>
+                <input type="checkbox" value="Checked" name="checked" checked> Checked check-mark
+                <br>
+                <input type="submit" value="Submit" name="submit"> Submit button
+                <br>
+                <select name="select-list">
+                    <option value="example-option-a">A</option>
+                    <option value="example-option-b">B</option>
+                    <option value="example-option-c">C</option>
+                </select>
+                <br>
+                <select name="select-list" size="2">
+                    <option value="example-option-a">A</option>
+                    <option value="example-option-b">B</option>
+                    <option value="example-option-c">C</option>
+                </select>
+                <br>
+                <select name="select-list" multiple>
+                    <option value="example-option-a">A</option>
+                    <option value="example-option-b">B</option>
+                    <option value="example-option-c">C</option>
+                </select>
+                <br>
+                <p>Here is datalist:</p>
+                <input list="example-datalist">
+                <datalist id="example-datalist">
+                    <option value="This">looks</option>
+                    <option value="much">better</option>
+                    <option value="than">a</option>
+                    <option value="regular">list</option>
+                </datalist>
+                <br>
+                <p>This is a text area:</p>
+                <textarea cols="30" rows="10" style="resize: none"></textarea>
+                <br>
+                <p>Here is an expandable textarea</p>
+                <textarea cols="30" rows="10"></textarea>
+                <br>
+                <label>Labels put the input inline</label>
+                <input type="text" placeholder="next to it.">
+                <br>
+                <label>Number input: </label>
+                <input type="number">
+                <br>
+                <label>Number input with different increments, min, max:</label>
+                <input type="number" step="0.1" min="2" max="10">
+                <p>Note how the min/max only applies to stepped values, not manually entered values</p>
+                <br>
+                <label>Email: </label>
+                <input type="email" required>
+                <p>Email inputs do validation at submit time</p>
+                <label>Try me: </label>
+                <input type="submit">
+                <p>It will reload if validation passes!</p>
+                <label>Password: </label>
+                <input type="password">
+                <br>
+                <label>Reset for clearing the whole form: </label>
+                <input type="reset">
+                <br>
+                <label>Color input: </label>
+                <input type="color">
+                <br>
+                <label>File input: </label>
+                <input type="file">
+                <br>
+                <label>Files input: </label>
+                <input type="file" multiple>
+                <br>
+                <label>Image: </label>
+                <input type="image" src="https://via.placeholder.com/120x20">
+                <p>You can also set minimum and maximum lengths for text inputs. Autofocus also selects default form
+                    elements to focus onload. Required attribute can be added to force the user to enter a field.</p>
+            </form>
+        </div>
+    </div>
+    <div class="challenge-container">
+        <h1 class="challenge-heading">Icons</h1>
+        <div class="challenge-body">
+            <i class="fa fa-spinner fa-spin"></i>
+            <p>Icons can be from various libraries, and are usually scalable. Some have multi-tones, gradients, and
+                can spin.</p>
+        </div>
+    </div>
+    <div class="challenge-container">
+        <h1 class="challenge-heading">HTML Semantics</h1>
+        <div class="challenge-body">
+            <p>HTML semantics are special tags that indicate what the content inside is supposed to be.
+            </p>
+            <details>
+                They aren't
+                mandatory and their usage is subjective, or follows a specific guideline set by a particular project.
+                Semantics include: nav, header, footer, aside, figure, figcaption, main, details, article, summary, etc.
+            </details>
+        </div>
+    </div>
+</body>
+
+</html>
